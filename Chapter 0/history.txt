@@ -1,0 +1,8 @@
+It is invented by Dennis Ritchie / 1972
+Initially written for UNIX system
+
+A language - Martin Richard 1960s
+B language - BPCL (Ken Thompson 1969)
+
+- OS, EMBEDDED, ROS
+- Compiler converts the code into machine code (Binary Code)
