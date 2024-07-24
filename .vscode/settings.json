@@ -1,0 +1,7 @@
+{
+  "files.associations": {
+    "*.cpp": "c",
+    "*.kt": "kotlin",
+    "math.h": "c"
+  }
+}
