@@ -1,0 +1,8 @@
+Function = Reuse code block 
+Functions are of two types -  
+    1. User Defined
+    2. Library Funcrions
+
+Parameters (a,b) Arguments (2,3)
+
+When function call itself is known as recurssion. 
