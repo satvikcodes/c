@@ -1,0 +1,182 @@
+Pointer - A variable that stores address of another variable 
+
+In C programming, different data types and their corresponding format specifiers are used to handle various kinds of data. These format specifiers are used in functions like `printf` and `scanf` to print and read values of different types. Here’s a comprehensive list of common data types in C along with their format specifiers:
+
+### Integer Types
+
+1. **int**:
+   - **Description**: A standard integer type.
+   - **Size**: Typically 4 bytes (platform-dependent).
+   - **Format Specifier**: `%d` or `%i`
+   ```c
+   int num = 10;
+   printf("%d", num); // Prints 10
+   ```
+
+2. **unsigned int**:
+   - **Description**: An unsigned integer type (only positive values).
+   - **Size**: Typically 4 bytes.
+   - **Format Specifier**: `%u`
+   ```c
+   unsigned int num = 10;
+   printf("%u", num); // Prints 10
+   ```
+
+3. **short**:
+   - **Description**: A shorter integer type.
+   - **Size**: Typically 2 bytes.
+   - **Format Specifier**: `%hd`
+   ```c
+   short num = 10;
+   printf("%hd", num); // Prints 10
+   ```
+
+4. **unsigned short**:
+   - **Description**: An unsigned short integer type.
+   - **Size**: Typically 2 bytes.
+   - **Format Specifier**: `%hu`
+   ```c
+   unsigned short num = 10;
+   printf("%hu", num); // Prints 10
+   ```
+
+5. **long**:
+   - **Description**: A longer integer type.
+   - **Size**: Typically 4 or 8 bytes.
+   - **Format Specifier**: `%ld`
+   ```c
+   long num = 10;
+   printf("%ld", num); // Prints 10
+   ```
+
+6. **unsigned long**:
+   - **Description**: An unsigned long integer type.
+   - **Size**: Typically 4 or 8 bytes.
+   - **Format Specifier**: `%lu`
+   ```c
+   unsigned long num = 10;
+   printf("%lu", num); // Prints 10
+   ```
+
+7. **long long**:
+   - **Description**: An extended integer type.
+   - **Size**: Typically 8 bytes.
+   - **Format Specifier**: `%lld`
+   ```c
+   long long num = 10;
+   printf("%lld", num); // Prints 10
+   ```
+
+8. **unsigned long long**:
+   - **Description**: An unsigned extended integer type.
+   - **Size**: Typically 8 bytes.
+   - **Format Specifier**: `%llu`
+   ```c
+   unsigned long long num = 10;
+   printf("%llu", num); // Prints 10
+   ```
+
+### Floating-Point Types
+
+1. **float**:
+   - **Description**: A single-precision floating-point type.
+   - **Size**: Typically 4 bytes.
+   - **Format Specifier**: `%f` or `%e` or `%g`
+   ```c
+   float num = 10.5;
+   printf("%f", num); // Prints 10.500000
+   ```
+
+2. **double**:
+   - **Description**: A double-precision floating-point type.
+   - **Size**: Typically 8 bytes.
+   - **Format Specifier**: `%lf` or `%e` or `%g`
+   ```c
+   double num = 10.5;
+   printf("%lf", num); // Prints 10.500000
+   ```
+
+3. **long double**:
+   - **Description**: An extended-precision floating-point type.
+   - **Size**: Typically 8 or 16 bytes.
+   - **Format Specifier**: `%Lf` or `%Le` or `%Lg`
+   ```c
+   long double num = 10.5;
+   printf("%Lf", num); // Prints 10.500000
+   ```
+
+### Character Types
+
+1. **char**:
+   - **Description**: A single character type.
+   - **Size**: Typically 1 byte.
+   - **Format Specifier**: `%c`
+   ```c
+   char ch = 'A';
+   printf("%c", ch); // Prints A
+   ```
+
+2. **String (char array)**:
+   - **Description**: A sequence of characters (null-terminated string).
+   - **Format Specifier**: `%s`
+   ```c
+   char str[] = "Hello";
+   printf("%s", str); // Prints Hello
+   ```
+
+### Pointer Types
+
+1. **Pointer**:
+   - **Description**: A memory address.
+   - **Format Specifier**: `%p`
+   ```c
+   int num = 10;
+   int *ptr = &num;
+   printf("%p", (void*)ptr); // Prints the memory address of num
+   ```
+
+### Miscellaneous
+
+1. **Octal Integer**:
+   - **Description**: An integer in octal (base-8) format.
+   - **Format Specifier**: `%o`
+   ```c
+   int num = 10;
+   printf("%o", num); // Prints 12 (octal representation of 10)
+   ```
+
+2. **Hexadecimal Integer**:
+   - **Description**: An integer in hexadecimal (base-16) format.
+   - **Format Specifier**: `%x` or `%X`
+   ```c
+   int num = 10;
+   printf("%x", num); // Prints a (hexadecimal representation of 10)
+   ```
+
+3. **Signed Integer**:
+   - **Description**: A signed integer.
+   - **Format Specifier**: `%i` or `%d`
+   ```c
+   int num = -10;
+   printf("%d", num); // Prints -10
+   ```
+
+4. **Unsigned Integer**:
+   - **Description**: An unsigned integer.
+   - **Format Specifier**: `%u`
+   ```c
+   unsigned int num = 10;
+   printf("%u", num); // Prints 10
+   ```
+
+5. **Scientific Notation**:
+   - **Description**: A floating-point number in scientific notation.
+   - **Format Specifier**: `%e` or `%E`
+   ```c
+   float num = 10.5;
+   printf("%e", num); // Prints 1.050000e+01
+   ```
+
+### Summary
+
+Different data types in C have specific format specifiers that are used with functions like `printf` and `scanf` to print and read values. Understanding these format specifiers is crucial for correct input and output operations in C.
